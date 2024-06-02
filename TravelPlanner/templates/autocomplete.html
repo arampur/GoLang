@@ -1,0 +1,7 @@
+<!-- autocomplete.html -->
+
+{{ range .Cities }}
+<div class="autocomplete-suggestion" onclick="fillLocation('{{ .Name }}')">
+    {{ .Name }}
+</div>
+{{ end }}
