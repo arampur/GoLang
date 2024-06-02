@@ -29,6 +29,21 @@ func main() {
 	var arr2 = []int{1, 2, 4, 5, 6, 7}
 	arr3 := findCommonBetweenTwoArrays(arr1, arr2)
 	fmt.Println(arr3)
+
+	//Working with personalized type of Array
+	type Data struct {
+		Number int
+		Text   string
+	}
+
+	structs := [8]Data{}
+	fmt.Println("Personalized type:", structs) // All the 8 elements will be like {0, ""} (Number = 0, Text = "")
+
+	//MUTIDIMENSIONAL ARRAY
+	multiDimArray := [2][3]int{{1, 2, 3}, {4, 5, 6}} // Here [2][3]int represents a 2 item array where each item is an array of 3 elements.
+	fmt.Println("Multi Dimensional Array:", multiDimArray)
+	//NOTE: There are no limits for the number of dimensions, so you can have e.g. [3][4][8][2]string array.
+
 }
 
 // func to find common elements between two arrays
