@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	str := "255.255.255.255"
+	str := "123.235.153.425"
 	fmt.Println("result:", validateIP(str))
 }
 

@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var arr1 = []int{1, 3, 4, 5, 6, 7, 8, 10}
-	key := 9
+	key := 7
 	res := doBinaryIndexSearch(arr1, key)
 	fmt.Println("result: ", res)
 }
