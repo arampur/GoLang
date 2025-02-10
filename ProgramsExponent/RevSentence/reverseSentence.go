@@ -32,7 +32,6 @@ func main() {
 
 	res := ReverseWords(arr)
 
-	
 	fmt.Println(res)
 
 }
