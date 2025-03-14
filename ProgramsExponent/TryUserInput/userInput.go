@@ -6,14 +6,16 @@ import (
 
 func main() {
 	var name string
+	var age int
 	fmt.Println("Whats your name?")
 	fmt.Scan(&name)
 	fmt.Printf("Your name: %v\n", name)
 
-	myAge := 10
-	newAge := makeMeOlder(myAge)
-	fmt.Println(newAge)
-	fmt.Println(myAge)
+	fmt.Println("Whats your age?")
+	fmt.Scan(&age)
+	newAge := makeMeOlder(age)
+	fmt.Println("Your current age:", age)
+	fmt.Println("After 5 years you will be:", newAge)
 
 }
 
